@@ -1,0 +1,20 @@
+{
+  "UI_Options_Title": "自言自语",
+  "UI_Options_Character": "角色配置",
+  "UI_Options_Personality": "角色性格",
+  "UI_Options_Personality_Tooltip": "角色性格，会影响角色说话的频率以及台词风格",
+  "UI_Options_Personality_Talkative": "喋喋不休",
+  "UI_Options_Personality_Composed": "泰然自若",
+  "UI_Options_Personality_Reticent": "沉默寡言",
+  "UI_Options_Rule": "台词使用规则",
+  "UI_Options_Rule_Tooltip": "台词使用规则，仅使用内置台词、仅使用额外台词或两者混合使用",
+  "UI_Options_Rule_Only_BuiltIn": "仅使用内置台词",
+  "UI_Options_Rule_Only_Extra": "仅使用额外台词",
+  "UI_Options_Rule_Both": "两者混合使用",
+  "UI_Options_Levels": "台词启用等级",
+  "UI_Options_Levels_Tooltip": "选择启用哪些状态等级的台词，默认启用 2、3、4 级状态的台词，只在恶化到指定等级时生效，比如默认从饥饿 0 到饥饿 1 不会触发，但饥饿 2 到 饥饿 1 会触发",
+  "UI_Options_Levels_1": "1 级状态",
+  "UI_Options_Levels_2": "2 级状态",
+  "UI_Options_Levels_3": "3 级状态",
+  "UI_Options_Levels_4": "4 级状态"
+}

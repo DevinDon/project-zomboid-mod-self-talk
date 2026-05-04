@@ -1,0 +1,12 @@
+version=1
+id=
+title=[B42] 自言自语 Self Talk
+description=幸存者不再沉默。
+description=角色会根据饥饿、口渴、疲劳、疼痛、恐慌等状态自动以第一人称自言自语，遇敌时警觉警告，找到物资时欣喜感叹。
+description=可调节说话频率，让末日独行不再死寂。
+description=
+description=Your survivor no longer stays silent.
+description=This mod lets your character automatically talk to themselves based on hunger, thirst, fatigue, pain, panic, and surroundings — warning of enemies, celebrating rare finds, or muttering in fear.
+description=Adjustable speaking frequency included.
+tags=Build 42;Interface;Realistic
+visibility=public

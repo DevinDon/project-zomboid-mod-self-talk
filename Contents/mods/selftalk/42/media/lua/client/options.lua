@@ -121,8 +121,6 @@ Events.OnInitWorld.Add(
         end
       end
     end
-    for key, value in pairs(Configs.lines) do
-    end
   end
 )
 

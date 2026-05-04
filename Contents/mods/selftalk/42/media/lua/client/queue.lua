@@ -22,7 +22,6 @@ local onQueueConsume = function(manual)
   local player = getPlayer()
   -- 如果获取不到角色、队列为空或发言间隔过短则不发言
   -- 支持配置项中的发言频率，包含多次发言间隔和单次发言数量
-  print('[debug - onQueueConsume - status]: ' .. #Queue .. ' - ' .. Minutes.total .. ' - ' .. Minutes.last .. ' - ' .. Configs.interval)
   if player == nil or #Queue == 0 or Minutes.total - Minutes.last < Configs.interval then
     return
   end
@@ -31,7 +30,6 @@ local onQueueConsume = function(manual)
     local line = table.remove(Queue, 1)
     -- 如果已经没有台词则跳出
     if line == nil then break end
-    print('[debug - onQueueConsume - Say]: ' .. index .. line)
     player:Say(line)
   end
   Minutes.last = Minutes.total
@@ -41,7 +39,6 @@ end
 local push = function(text)
   if type(text) ~= 'string' or text == '' then return end
   table.insert(Queue, text)
-  print('[debug - push]: ' .. text)
   -- 立即手动触发一次发言检测
   onQueueConsume(true)
 end

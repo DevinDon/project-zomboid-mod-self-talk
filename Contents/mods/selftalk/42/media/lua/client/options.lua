@@ -90,8 +90,6 @@ Events.OnInitWorld.Add(
     local Options = PZAPI.ModOptions:getOptions('SelfTalk')
     -- 获取配置中的台词启用等级，获取最后一个字符作为等级
     for index, item in ipairs(Options:getOption('Levels').values) do
-      print('[debug - Levels]: ' .. tostring(item.name[#item.name]) .. ' - ' .. tostring(item.value))
-      print('[debug - Levels]: ' .. item.name .. ' - ' .. tostring(#item.name) .. ' - ' .. string.sub(item.name, -1))
       Configs.levels[tonumber(string.sub(item.name, -1))] = item.value
     end
     -- 获取配置中的角色性格以确定台词风格、多次发言间隔和单次发言数量
@@ -124,7 +122,6 @@ Events.OnInitWorld.Add(
       end
     end
     for key, value in pairs(Configs.lines) do
-      print('[debug - Lines]: ' .. key .. ' - ' .. #value .. tostring(value[1]))
     end
   end
 )

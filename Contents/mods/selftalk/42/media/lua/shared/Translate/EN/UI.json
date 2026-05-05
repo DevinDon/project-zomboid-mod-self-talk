@@ -1,0 +1,20 @@
+{
+  "UI_Options_Title": "Self Talk",
+  "UI_Options_Character": "Character Config",
+  "UI_Options_Personality": "Personality",
+  "UI_Options_Personality_Tooltip": "Personality affects how often the character speaks and the style of their lines",
+  "UI_Options_Personality_Talkative": "Talkative",
+  "UI_Options_Personality_Composed": "Composed",
+  "UI_Options_Personality_Reticent": "Reticent",
+  "UI_Options_Rule": "Line Rules",
+  "UI_Options_Rule_Tooltip": "Line usage rules: use only built-in lines, only extra lines, or mix both",
+  "UI_Options_Rule_Only_BuiltIn": "Built-in Lines Only",
+  "UI_Options_Rule_Only_Extra": "Extra Lines Only",
+  "UI_Options_Rule_Both": "Mixed",
+  "UI_Options_Levels": "Active Moodle Levels",
+  "UI_Options_Levels_Tooltip": "Select which moodle levels trigger lines. Levels 2, 3, and 4 are enabled by default. Lines only trigger when worsening to the specified level, e.g., Hunger 0 → Hunger 1 won't trigger, but Hunger 2 → Hunger 1 will.",
+  "UI_Options_Levels_1": "Level 1 Moodle",
+  "UI_Options_Levels_2": "Level 2 Moodle",
+  "UI_Options_Levels_3": "Level 3 Moodle",
+  "UI_Options_Levels_4": "Level 4 Moodle"
+}

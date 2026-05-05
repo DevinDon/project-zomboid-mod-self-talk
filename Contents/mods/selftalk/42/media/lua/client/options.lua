@@ -75,9 +75,9 @@ local Configs = {
   levels = {},
   -- 角色性格，1 为喋喋不休、2 为泰然自若、3 为沉默寡言
   personality = 2,
-  -- 发言间隔，单位游戏内分钟，最低 1 分钟
-  interval = 1,
-  -- 单次发言条数，最少 1 条
+  -- 发言间隔，单位毫秒，最少 1000 毫秒
+  interval = 1000,
+  -- 单次推入的台词数量，最少 1 条
   size = 1,
   -- 台词表，解析 `IGUI.json` 文件，保持键名不变，值以 / 分隔解析为列表
   lines = {},
@@ -94,9 +94,9 @@ Events.OnInitWorld.Add(
     end
     -- 获取配置中的角色性格以确定台词风格、多次发言间隔和单次发言数量
     Configs.personality = Options:getOption('Personality').selected
-    -- 喋喋不休间隔游戏内 1 分钟，以此类推
-    Configs.interval = math.max(1, Configs.personality - 1)
-    -- 喋喋不休每次最多发言 3 - 1 = 2 句台词，以此类推
+    -- 喋喋不休每次发言间隔为 1 秒钟，以此类推
+    Configs.interval = math.max(1000, (Configs.personality - 1) * 1000)
+    -- 喋喋不休每次最多推入 3 - 1 = 2 句台词，以此类推
     Configs.size = math.max(1, 3 - Configs.personality)
     -- 解析台词表
     for index, item in ipairs(Moodles) do

@@ -1,5 +1,3 @@
-local randomer = newrandom()
-
 -- 以 / 为分隔符的分割函数
 local split = function(text)
   local list = {}
@@ -8,6 +6,9 @@ local split = function(text)
   end
   return list
 end
+
+-- 随机数生成器
+local randomer = newrandom()
 
 -- 随机采样，从 1 到 n 中随机返回 k 个不重复的数字
 local sample = function(n, k)
@@ -35,8 +36,17 @@ local sample = function(n, k)
   return result
 end
 
+-- 时间工具
+local Time = Calendar.getInstance()
+
+-- 获取当前时间戳，毫秒
+local now = function()
+  return Time:getTimeInMillis()
+end
+
 -- 导出模块
 return {
   split = split,
   sample = sample,
+  now = now,
 }

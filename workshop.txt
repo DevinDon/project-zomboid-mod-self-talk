@@ -1,5 +1,5 @@
 version=1
-id=
+id=3719928935
 title=[B42] 自言自语 Self Talk
 description=幸存者不再沉默。
 description=角色会根据饥饿、口渴、疲劳、疼痛、恐慌等状态自动以第一人称自言自语，遇敌时警觉警告，找到物资时欣喜感叹。

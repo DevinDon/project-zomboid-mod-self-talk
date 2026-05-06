@@ -1,5 +1,5 @@
 -- 导入工具模块
-local utils = require('utils')
+local Utils = require('utils')
 
 -- 配置项文档见 <https://pzwiki.net/wiki/ModOptions>
 local createOptions = function()
@@ -115,7 +115,7 @@ Events.OnInitWorld.Add(
             -- 如果台词不为空
             if text ~= nil and text ~= '' then
               -- 拆分台词列表并将添加到配置中
-              Configs.lines[key] = utils.split(text)
+              Configs.lines[key] = Utils.split(text)
             end
           end
         end

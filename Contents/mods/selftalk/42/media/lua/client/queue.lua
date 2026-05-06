@@ -1,5 +1,5 @@
 -- 导入工具
-local utils = require('utils')
+local Utils = require('utils')
 -- 获取配置
 local Configs = require('options').Configs
 
@@ -15,11 +15,11 @@ local onQueueConsume = function()
   local player = getPlayer()
   -- 如果获取不到角色、队列为空或发言间隔过短则不发言
   -- 支持配置项中的发言频率，包含多次发言间隔和单次发言数量
-  if player == nil or #Queue == 0 or utils.now() - last < Configs.interval then
+  if player == nil or #Queue == 0 or Utils.now() - last < Configs.interval then
     return
   end
   -- 更新发言时间戳
-  last = utils.now()
+  last = Utils.now()
   -- 获取下一句台词
   local line = table.remove(Queue, 1)
   -- 发言

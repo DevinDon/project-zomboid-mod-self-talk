@@ -71,6 +71,3 @@ storybook-static
 *.ttf
 *.woff
 *.woff2
-
-# backup
-backups

@@ -1,13 +1,11 @@
 -- 获取配置
-local Options = require('options')
+local Options = require('selftalk/options')
 local Configs = Options.Configs
 local Moodles = Options.Moodles
-
 -- 导入工具模块
-local utils = require('utils')
-
+local utils = require('selftalk/utils')
 -- 导入发言队列模块
-local Queue = require('queue')
+local Queue = require('selftalk/queue')
 
 -- 角色当前状态表
 local Status = {}

@@ -1,8 +1,8 @@
 -- 导入工具
-local Utils = require('utils')
+local Utils = require('selftalk/utils')
 -- 导入事件处理器
-local onMoodleUpdate = require('moodle-change').onMoodleUpdate
-local onQueueConsume = require('queue').onQueueConsume
+local onMoodleUpdate = require('selftalk/moodle-change').onMoodleUpdate
+local onQueueConsume = require('selftalk/queue').onQueueConsume
 
 -- 上次执行时间戳，毫秒
 local last = 0

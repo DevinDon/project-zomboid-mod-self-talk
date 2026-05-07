@@ -1,5 +1,5 @@
 -- 导入工具模块
-local Utils = require('utils')
+local Utils = require('selftalk/utils')
 
 -- 配置项文档见 <https://pzwiki.net/wiki/ModOptions>
 local createOptions = function()

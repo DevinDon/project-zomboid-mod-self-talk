@@ -1,7 +1,7 @@
 -- 导入工具
-local Utils = require('utils')
+local Utils = require('selftalk/utils')
 -- 获取配置
-local Configs = require('options').Configs
+local Configs = require('selftalk/options').Configs
 
 -- 角色即将发言的台词队列
 local Queue = {}

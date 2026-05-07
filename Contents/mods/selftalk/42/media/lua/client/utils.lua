@@ -39,7 +39,7 @@ end
 -- 获取当前时间戳，毫秒
 -- 如果缓存 `Calendar.getInstance()` 则会导致时间不变，所以必须每次获取新的实例
 local now = function()
-  return Calendar.getInstance():getTimeInMillis()
+  return getTimestampMs()
 end
 
 -- 导出模块
